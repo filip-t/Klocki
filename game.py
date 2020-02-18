@@ -1,4 +1,5 @@
 import pygame
+import sys
 
 
 class Game:
@@ -32,7 +33,10 @@ class Game:
             self.clock.tick(self.frame_rate)
 
     def handle_events(self):
-        pass        # TODO: add event handling
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()        # TODO: add event handling
 
     def update(self):
         for o in self.objects:      # TODO: add game objects
