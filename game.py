@@ -26,7 +26,18 @@ class Game:
 
             self.handle_events()
             self.update()
-            self.draw()             # TODO: implement these methods
+            self.draw()
 
             pygame.display.update()
             self.clock.tick(self.frame_rate)
+
+    def handle_events(self):
+        pass        # TODO: add event handling
+
+    def update(self):
+        for o in self.objects:      # TODO: add game objects
+            o.update()
+
+    def draw(self):
+        for o in self.objects:
+            o.draw(self.surface)
