@@ -1,7 +1,7 @@
 import colors
 
-screen_width = 800
-screen_height = 600
+screen_width = 600
+screen_height = 800
 background_image = 'assets/pine-wood-texture.jpg'
 
 frame_rate = 60

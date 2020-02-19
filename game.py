@@ -36,10 +36,10 @@ class Game:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
-                sys.exit()        # TODO: add event handling
+                sys.exit()        # TODO: add more event handling
 
     def update(self):
-        for o in self.objects:      # TODO: add game objects
+        for o in self.objects:
             o.update()
 
     def draw(self):
