@@ -16,10 +16,11 @@ sound_effects = dict(
 
 )
 
-button_text_color = colors.WHITE
-button_normal_back_color = colors.INDIANRED1
-button_hover_back_color = colors.INDIANRED2
-button_pressed_back_color = colors.INDIANRED3
+
+block_border_idle_color = colors.GRAY1
+block_border_hover_color = colors.YELLOW1
+block_border_selecthover_color = colors.GREENYELLOW
+block_border_selected_color = colors.BLUE
 
 menu_offset_x = 20
 menu_offset_y = 300

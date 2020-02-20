@@ -7,7 +7,12 @@ import config as c
 
 class Klocki(Game):
     def __init__(self):
-        Game.__init__(self, 'Klocki', c.screen_width, c.screen_height, c.background_image, c.frame_rate)
+        Game.__init__(self,
+                      'Klocki',
+                      c.screen_width,
+                      c.screen_height,
+                      c.background_image,
+                      c.frame_rate)
         self.is_game_running = False
         self.blocks = None
         self.board = Board()
@@ -28,6 +33,7 @@ class Klocki(Game):
         self.blocks = blocks
         for block in blocks:
             self.objects.append(block)
+            self.mouse_handlers.append(block.handle_mouse_event)
 
     def update(self):
         super().update()

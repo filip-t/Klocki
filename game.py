@@ -37,6 +37,11 @@ class Game:
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()        # TODO: add more event handling
+            elif event.type in (pygame.MOUSEBUTTONDOWN,
+                                pygame.MOUSEBUTTONUP,
+                                pygame.MOUSEMOTION):
+                for handler in self.mouse_handlers:
+                    handler(event.type, event.pos)
 
     def update(self):
         for o in self.objects:
