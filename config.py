@@ -16,8 +16,6 @@ sound_effects = dict(
 
 )
 
-message_duration = 3
-
 button_text_color = colors.WHITE
 button_normal_back_color = colors.INDIANRED1
 button_hover_back_color = colors.INDIANRED2
